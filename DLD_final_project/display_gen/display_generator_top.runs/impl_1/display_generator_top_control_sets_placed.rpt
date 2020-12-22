@@ -1,0 +1,85 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Dec 18 04:47:29 2020
+| Host         : LAB-SCI-304-01 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file display_generator_top_control_sets_placed.rpt
+| Design       : display_generator_top
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     7 |
+|    Minimum number of control sets                        |     7 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    38 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     7 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     0 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              13 |            6 |
+| No           | No                    | Yes                    |               4 |            3 |
+| No           | Yes                   | No                     |              21 |            7 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              20 |            7 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------+---------------------------------------+------------------------------------+------------------+----------------+
+|                    Clock Signal                    |             Enable Signal             |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------------------------------------------+---------------------------------------+------------------------------------+------------------+----------------+
+|  vga_sync_unit/clk_divider_reg_n_0_[0]             |                                       | btnC_IBUF                          |                2 |              2 |
+|  CLK100MHZ_IBUF_BUFG                               |                                       | btnC_IBUF                          |                1 |              2 |
+|  box_gen_unit/box_controller_unit/x_reg[9]_i_2_n_0 |                                       | box_gen_unit/box_controller_unit/y |                3 |              9 |
+|  vga_sync_unit/clk_divider_reg_n_0_[0]             | vga_sync_unit/v_count_reg0            | btnC_IBUF                          |                4 |             10 |
+|  vga_sync_unit/clk_divider_reg_n_0_[0]             | vga_sync_unit/clk_divider_reg[1]_0[0] | btnC_IBUF                          |                3 |             10 |
+|  vga_sync_unit/clk_divider_reg[1]_0[0]             |                                       | vga_sync_unit/h_count_reg_reg[8]_0 |                4 |             12 |
+|  box_gen_unit/box_controller_unit/u_reg[9]_i_2_n_0 |                                       |                                    |                6 |             13 |
++----------------------------------------------------+---------------------------------------+------------------------------------+------------------+----------------+
+
+

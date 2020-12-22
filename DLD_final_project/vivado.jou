@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec 18 04:46:13 2020
+# Process ID: 10468
+# Current directory: C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai
+# Command line: vivado.exe -mode batch -source ./setup_project.tcl
+# Log file: C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/vivado.log
+# Journal file: C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai\vivado.jou
+#-----------------------------------------------------------
+source ./setup_project.tcl

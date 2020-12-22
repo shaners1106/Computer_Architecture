@@ -1,0 +1,7 @@
+I am going to take on a VGA generator stream.  I'd like my component to take an array of
+ASCII chars as input and then display them in differing colors on the screen.  I am
+still very apprehensive about this project because I haven't had the best luck with
+Vivado or VHDL and I'm nervous that this is going to be extremely difficult for me 
+to navigate.  But I want this is the project that interests me the most and something
+that I think I would be very proud to present.  I am excited to get to work on it and
+very thankful that you have provided the code foundation in your IC_27 example.

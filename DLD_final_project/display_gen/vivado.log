@@ -1,0 +1,243 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec 18 04:48:48 2020
+# Process ID: 9596
+# Current directory: C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/display_gen
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11992 C:\Users\ssnediker07\Desktop\CS373Final\final_project_chennai\display_gen\display_generator_top.xpr
+# Log file: C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/display_gen/vivado.log
+# Journal file: C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/display_gen\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/display_gen/display_generator_top.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AFCF4DA
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1879.863 ; gain = 842.926
+set_property PROGRAM.FILE {C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/display_gen/display_generator_top.runs/impl_1/display_generator_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/display_gen/display_generator_top.runs/impl_1/display_generator_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: display_generator_top
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2330.957 ; gain = 184.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'display_generator_top' [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/display_generator_top.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'hv_syncs' [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/hv_syncs.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'hv_syncs' (1#1) [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/hv_syncs.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'box_unit' [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/box_unit.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'box_controller' [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/box_controller.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'box_controller' (2#1) [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/box_controller.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'col_gen' [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/col_gen.vhd:28]
+WARNING: [Synth 8-614] signal 'box_r' is read in the process but is not in the sensitivity list [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/col_gen.vhd:32]
+WARNING: [Synth 8-614] signal 'box_g' is read in the process but is not in the sensitivity list [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/col_gen.vhd:32]
+WARNING: [Synth 8-614] signal 'box_b' is read in the process but is not in the sensitivity list [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/col_gen.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'col_gen' (3#1) [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/col_gen.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'col_regs' [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/col_regs.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'col_regs' (4#1) [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/col_regs.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'box_unit' (5#1) [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/box_unit.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'display_generator_top' (6#1) [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/display_generator_top.vhd:37]
+WARNING: [Synth 8-3917] design display_generator_top has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design display_generator_top has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design display_generator_top has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design display_generator_top has port an[0] driven by constant 1
+WARNING: [Synth 8-3917] design display_generator_top has port seg[6] driven by constant 1
+WARNING: [Synth 8-3917] design display_generator_top has port seg[5] driven by constant 1
+WARNING: [Synth 8-3917] design display_generator_top has port seg[4] driven by constant 1
+WARNING: [Synth 8-3917] design display_generator_top has port seg[3] driven by constant 1
+WARNING: [Synth 8-3917] design display_generator_top has port seg[2] driven by constant 1
+WARNING: [Synth 8-3917] design display_generator_top has port seg[1] driven by constant 1
+WARNING: [Synth 8-3917] design display_generator_top has port seg[0] driven by constant 1
+WARNING: [Synth 8-3917] design display_generator_top has port dp driven by constant 1
+WARNING: [Synth 8-3331] design box_unit has unconnected port sw[7]
+WARNING: [Synth 8-3331] design box_unit has unconnected port sw[6]
+WARNING: [Synth 8-3331] design box_unit has unconnected port sw[5]
+WARNING: [Synth 8-3331] design box_unit has unconnected port sw[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2367.012 ; gain = 220.992
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2384.883 ; gain = 238.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2384.883 ; gain = 238.863
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 12 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ssnediker07/Desktop/CS373Final/final_project_chennai/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2507.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2526.887 ; gain = 380.867
+17 Infos, 59 Warnings, 40 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 2526.887 ; gain = 588.406
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 18 05:30:06 2020...
