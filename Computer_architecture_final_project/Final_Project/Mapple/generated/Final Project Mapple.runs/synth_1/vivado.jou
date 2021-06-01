@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May 19 20:29:35 2021
+# Process ID: 28864
+# Current directory: C:/Users/Levi/Desktop/FP4/fp_4_mapple-em-1/Mapple/generated/Final Project Mapple.runs/synth_1
+# Command line: vivado.exe -log mapple_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mapple_top.tcl
+# Log file: C:/Users/Levi/Desktop/FP4/fp_4_mapple-em-1/Mapple/generated/Final Project Mapple.runs/synth_1/mapple_top.vds
+# Journal file: C:/Users/Levi/Desktop/FP4/fp_4_mapple-em-1/Mapple/generated/Final Project Mapple.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mapple_top.tcl -notrace

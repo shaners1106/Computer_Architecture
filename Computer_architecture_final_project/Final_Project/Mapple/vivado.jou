@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May 19 20:29:26 2021
+# Process ID: 27092
+# Current directory: C:/Users/Levi/Desktop/FP4/fp_4_mapple-em-1/Mapple
+# Command line: vivado.exe -mode batch -source ./setup_project.tcl
+# Log file: C:/Users/Levi/Desktop/FP4/fp_4_mapple-em-1/Mapple/vivado.log
+# Journal file: C:/Users/Levi/Desktop/FP4/fp_4_mapple-em-1/Mapple\vivado.jou
+#-----------------------------------------------------------
+source ./setup_project.tcl
